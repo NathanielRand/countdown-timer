@@ -3,11 +3,13 @@
 Live Demo: insert link here
 
 Todo: 
-- Add animation when timer is over
+- Add shake animation when timer is <= 10 seconds.
+- Add completed animation when timer is over.
 - Add hour form 
 - Add seconds form
 - Cancel timer
-- Redesign gradient background
-- Send text when over via Twilio
+- (Optional) Send text when over via Twilio
+- ~~Redesign gradient background~~
+- ~~Transform timer to "Done" when completed~~
 - ~~Clear existing timers~~
 - ~~Add custom minutes~~

@@ -2,28 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Countdown Timer</title>
-  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <title>Countdown Timer</title>  
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="timer">
     <div class="timer__controls">
       <button data-time="60" class="timer__button">60 Secs</button>
-      <button data-time="300" class="timer__button">Sprint 5</button>
-      <button data-time="900" class="timer__button">Quick 15</button>
-      <button data-time="1200" class="timer__button">Snack 20</button>
-      <button data-time="3600" class="timer__button">Lunch Break</button>
+      <button data-time="300" class="timer__button">5 Mins</button>
+      <button data-time="900" class="timer__button">15 Mins</button>
+      <button data-time="1800" class="timer__button">30 Min</button>
+      <button data-time="3600" class="timer__button">1 Hour</button>
       <form name="customForm" id="custom">
-        <input type="text" name="minutes" placeholder="Enter Minutes">
+        <input type="text" name="minutes" placeholder="CUSTOM MINUTES">
       </form>
     </div>
-    <div class="display">
-      <h1 class="display__time-left"></h1>
-      <p class="display__end-time"></p>
+    <div class="heading">
+      <h1 class="heading-title">Countdown Timer</h2>      
     </div>
+    <div class="display">
+      <h1 id="display-time-left" class="display__time-left"></h1>
+      <p id="display-end-time" class="display__end-time"></p>
+    </div>
+    <h4 class="footer-author">By: Nathaniel Rand</h4>
   </div>
-
   <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,12 +1,14 @@
 // Countdown global variables
 let countdown;
 const timerDisplay = document.querySelector('.display__time-left');
+const animateTimer = document.querySelector('.display__time-left');
 const endTime = document.querySelector('.display__end-time');
 const buttons = document.querySelectorAll('[data-time]');
 
 function timer(seconds) {
   // Clear any running timers.
   clearInterval(countdown);
+  animateTimer.classList.remove(".shake-timer");
   // The current timestamp in milliseconds.
   const now = Date.now();
   // Multiply by 1000 bc now is in milliseconds.
@@ -17,10 +19,17 @@ function timer(seconds) {
 
   countdown = setInterval(() => {
     const secondsLeft = Math.round((then - Date.now()) / 1000);
+
+    if (secondsLeft < 10) {
+      // animateTimer.classList.add(".shake-animation");
+      // animateTimer.setAttribute("id", "shake-animation")
+    }
+
     // Check for stop
     if (secondsLeft < 0) {
-      // Add animation
       clearInterval(countdown);
+      document.getElementById("display-time-left").innerHTML = "DONE";
+      // Add completed animation
       return;
     }
     // Display seconds
