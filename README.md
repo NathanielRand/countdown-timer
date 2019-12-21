@@ -17,9 +17,10 @@
 - ~~Transform timer to "Done" when completed~~
 - ~~Clear existing timers when new timer is added~~
 - ~~Add custom minutes form~~
+- If no timer selected, display "Select timer to begin"
 - Add shake animation when timer is <= 10 seconds.
 - Add completed animation when timer is over.
 - Add custom hour form 
 - Add custom seconds form
 - Cancel timer
-- (Optional) Send text when over via Twilio
+- (Optional) Send text form when over via Twilio

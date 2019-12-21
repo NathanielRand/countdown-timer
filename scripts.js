@@ -8,7 +8,7 @@ const buttons = document.querySelectorAll('[data-time]');
 function timer(seconds) {
   // Clear any running timers.
   clearInterval(countdown);
-  animateTimer.classList.remove(".shake-timer");
+  // animateTimer.classList.remove(".shake-timer");
   // The current timestamp in milliseconds.
   const now = Date.now();
   // Multiply by 1000 bc now is in milliseconds.
@@ -50,7 +50,7 @@ function displayEndTime(timestamp) {
   const hour = end.getHours();
   const adjustedHour = hour > 12 ? hour - 12 : hour;
   const minutes = end.getMinutes();
-  endTime.textContent = `ETA: ${adjustedHour}:${minutes < 10 ? '0' : ''}${minutes}`;
+  endTime.textContent = `EXPIRES: ${adjustedHour}:${minutes < 10 ? '0' : ''}${minutes}`;
 }
 
 function startTimer() {
