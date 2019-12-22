@@ -37,6 +37,10 @@ function timer(seconds) {
   }, 1000);
 }
 
+if (timer != true) {
+  document.getElementById("display-time-left").innerHTML = "Hi";
+}
+
 function displayTimeLeft(seconds) {
   const minutes = Math.floor(seconds / 60);
   const remainderSeconds = seconds % 60;
